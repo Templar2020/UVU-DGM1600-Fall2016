@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+        <title>Choose Your Own Adventure Game</title>
+	</head>
+	<body>
+        <script>
+            /* JavaScript : Choose Your Own Adventure Game */
+            /* Game Functions*/
+            
+            /* Game Win */
+            function win(score){
+                alert("Congratulations you have won the game!");
+                 alert("Score = "+score );
+            }
+            
+            /* Game Over*/
+            function gameOver(score){
+                alert("Thank you for playing CYOA 2.0, Goodbye!");
+                alert("Score = "+score );
+            }
+            
+            /* Starting Location Village */
+            function village(){
+                
+                var village =prompt("You arrive at RiverGlen a small rustic village on the outskirts of the forest Fwelt. The village is bursting with life, all sorts of people are out and about. The village offers many services. What will you choose? (Blacksmith, Inn, Tavern, Magic Shop or Leave)").toLowerCase();
+                
+                switch(village){
+                    case blacksmith:
+                        
+                    break;
+                    case inn:
+                        
+                    break;
+                    case tavern:
+                        
+                    break;
+                    case magic shop:
+                        
+                    break;
+                    case leave:
+                        
+                    break;
+                }
+                
+                
+                
+            }
+            
+            /* Forest Fwelt */
+            function forest(){
+                
+            }
+            
+            /* Global Variables */
+            var score = 0;
+            
+            /* Pop Up Boxes */
+            alert("Choose Your Own Adventure Game 2.0");            
+            var player = prompt("What is your name traveller?");
+            var gameStart = confirm(player+" are you ready to begin your adventure?");
+            
+            /* If Statement checking gameStart  variable */
+            if(gameStart){
+                village();
+            }
+            else{
+                gameOver(score);
+            }
+            
+        </script>
+	</body>
+</html>
