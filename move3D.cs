@@ -12,7 +12,7 @@ public class move : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		// Move Forward
+		// Move Forward, Back and Rotate Left and Right.
 		var x = Input.GetAxis("Horizontal") * Time.deltaTime * turnSpeed;
         var z = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
 
